@@ -37,9 +37,9 @@ class Enemy extends Box {
     }
 }
 let player = new Player()
-let e1 = new Enemy(4)
-let e2 = new Enemy(8)
-let e3 = new Enemy(12)
+let e1 = new Enemy(8)
+let e2 = new Enemy(12)
+let e3 = new Enemy(16)
 e1.x = 100
 e2.x = 220
 e3.x = 340
@@ -63,7 +63,7 @@ function drawBox(box) {
 
 }
 paintbox.addEventListener('mousedown', () => {
-    player.speed = 10
+    player.speed = 12
     console.log('mousedown')
 })
 paintbox.addEventListener('mouseup', () => {
