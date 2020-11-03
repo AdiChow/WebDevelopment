@@ -43,7 +43,7 @@ let e3 = new Enemy(12)
 e1.x = 100
 e2.x = 220
 e3.x = 340
-
+e3.y = 450
 function isCollided(box1, box2) {
     if (Math.abs(box1.x-box2.x)<45 && Math.abs(box1.y-box2.y)<45)
     return true
