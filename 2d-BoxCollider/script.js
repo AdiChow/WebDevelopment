@@ -82,7 +82,9 @@ function gameloop() {
     if (isCollided(e1, player) || isCollided(e2, player) || isCollided(e3, player))
     {
         gameOn=false
+        console.log('over')
         window.alert("GameOver")
+       
         window.location.reload()
     }
     if(isWon(player))
